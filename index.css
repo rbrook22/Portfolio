@@ -1,0 +1,15 @@
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+.imgMain {
+    background-image: url(imgs/imgHome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+}
