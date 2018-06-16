@@ -67,6 +67,14 @@ ul li {
     margin-bottom: 16px;
     line-height: 48px;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
 /* End NavBar Styling */
 .imgContainer {
     display: flex;
