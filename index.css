@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(242, 240, 234);
 }
 /* NavBar Styling */
 .navOptions {
