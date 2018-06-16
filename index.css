@@ -90,6 +90,83 @@ a:hover {
     width: 500px;
 }
 
+/* Beginning Skills Styling */
+.skillsList {
+    display: flex;
+    flex-flow: row wrap;
+}
+.html {
+    background-image: url(skills/html5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.css {
+    background-image: url(skills/css3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.javascript {
+    background-image: url(skills/js.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.jquery {
+    background-image: url(skills/JQuery.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.python {
+    background-image: url(skills/python.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.nodejs {
+    background-image: url(skills/njs.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.express {
+    background-image: url(skills/express.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.react {
+    background-image: url(skills/react.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.sql {
+    background-image: url(skills/sql.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+.git {
+    background-image: url(skills/github.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 75px;
+}
+
+/* End Skills Styling */
 /* Beginning Footer Styling */
 .contactTitle {
     font-size: 30px;
