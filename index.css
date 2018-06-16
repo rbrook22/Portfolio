@@ -88,3 +88,81 @@ a:hover {
     height: 500px;
     width: 500px;
 }
+
+/* Beginning Footer Styling */
+.contactTitle {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contactList {
+    display: flex;
+    justify-content: space-around;
+}
+.email {
+    background-image: url(icons/emailBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.email:hover{
+    background-image: url(icons/email.png);
+    cursor: pointer;
+}
+.linkedIn {
+    background-image: url(icons/linkedinBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.linkedIn:hover{
+    background-image: url(icons/linkedin.png);
+    cursor: pointer;
+}
+.blog {
+    background-image: url(icons/mediumBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.blog:hover{
+    background-image: url(icons/medium.png);
+    cursor: pointer;
+}
+.gitHub {
+    background-image: url(icons/githubBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.gitHub:hover{
+    background-image: url(icons/github.png);
+    cursor: pointer;
+}
+.youTube {
+    background-image: url(icons/youtubeBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.youTube:hover{
+    background-image: url(icons/youTube.png);
+    cursor: pointer;
+}
+.resume {
+    background-image: url(icons/resumeBlack.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+.resume:hover{
+    background-image: url(icons/resume.png);
+    cursor: pointer;
+}
+/* End of Footer Styling */
