@@ -93,12 +93,46 @@ a:hover {
     width: 500px;
 }
 
-/* Begginning About Styling */
+/* Beginning About Styling */
 .aboutTitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.aboutMePic {
+    background-image: url(imgs/me.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+}
+.aboutContentTitle {
     font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 5px;
+}
+/* End About Styling */
+
+/* Beginning Work Styling */
+.workTitle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.spacerImage {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-/* End About Styling */
+/* End Work Styling */
+
 /* Beginning Skills Styling */
 h3 {
     margin-bottom: 50px;
@@ -106,9 +140,10 @@ h3 {
     font-weight: 300;
 }
 .skillsTitle {
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: 700;
     text-align: center;
-    padding-bottom: 30px;
+    letter-spacing: 2px;
 }
 .skillsList {
     display: flex;
@@ -224,6 +259,9 @@ h3 {
 
 /* End Skills Styling */
 /* Beginning Footer Styling */
+.contactSection {
+    padding-bottom: 10px;
+}
 .contactTitle {
     font-size: 30px;
     text-align: center;
@@ -231,14 +269,18 @@ h3 {
 }
 .contactList {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.icons {
+    height: 40px;
+    width: 40px;
+    margin-right: 11px;
+    margin-bottom: 5px;
 }
 .email {
     background-image: url(icons/emailBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .email:hover{
     background-image: url(icons/email.png);
@@ -248,8 +290,6 @@ h3 {
     background-image: url(icons/linkedinBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .linkedIn:hover{
     background-image: url(icons/linkedin.png);
@@ -259,8 +299,6 @@ h3 {
     background-image: url(icons/mediumBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .blog:hover{
     background-image: url(icons/medium.png);
@@ -270,8 +308,6 @@ h3 {
     background-image: url(icons/githubBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .gitHub:hover{
     background-image: url(icons/github.png);
@@ -281,8 +317,6 @@ h3 {
     background-image: url(icons/youtubeBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .youTube:hover{
     background-image: url(icons/youTube.png);
@@ -292,8 +326,6 @@ h3 {
     background-image: url(icons/resumeBlack.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
 }
 .resume:hover{
     background-image: url(icons/resume.png);
