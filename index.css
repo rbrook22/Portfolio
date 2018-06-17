@@ -99,6 +99,10 @@ a:hover {
     margin-left: 0;
 }
 /* Beginning About Me Styling */
+.aboutContentContainer {
+    margin-left: 10px;
+    
+}
 .aboutTitle {
     text-align: center;
     font-size: 15px;
@@ -129,6 +133,8 @@ a:hover {
     font-size: 18px;
     font-weight:100;
     line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* End About Styling */
 
