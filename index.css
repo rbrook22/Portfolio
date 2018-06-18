@@ -163,6 +163,7 @@ a:hover {
     border-image: linear-gradient(90deg, #308ff8, #30ef91);
     border-image-slice: 1;
     background-color: rgb(242, 240, 234);
+    letter-spacing: 2px;
 }
 .button:hover {
     background: linear-gradient(to right, #308ff8, #30ef91);
