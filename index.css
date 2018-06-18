@@ -390,7 +390,18 @@ h3 {
 /* End of Footer Styling */
 
 /* RAD Hiking Page Styling */
-
+.radContentContainer {
+    padding-left: 20px;
+}
+.radHomeImg {
+    background-image: url(imgs/radHome.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 40px;
+}
 /* Beginning RAD Home Styling */
 
 /* End RAD Home Styling */
