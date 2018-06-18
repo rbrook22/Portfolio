@@ -94,7 +94,6 @@ a:hover {
     height: 500px;
     width: 500px;
 }
-
 .line {
     border: solid 2px;
     width: 30px;
@@ -103,16 +102,17 @@ a:hover {
     margin-left: 0;
     padding-left: 20px;
 }
-/* Beginning About Me Styling */
-.aboutContentContainer {
-    margin-left: 10px;
-    
-}
-.aboutTitle {
+.title {
     text-align: center;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
+    padding-left: 20px;
+}
+/* Beginning About Me Styling */
+.aboutContentContainer {
+    margin-left: 10px;
+    
 }
 .img-container {
     display: flex;
@@ -143,13 +143,6 @@ a:hover {
 /* End About Styling */
 
 /* Beginning Work Styling */
-.workTitle {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding-left: 20px;
-}
 .spacerImage {
     text-align: center;
     padding-bottom: 30px;
@@ -235,8 +228,60 @@ a:hover {
     color:white;
 
 }
-
 /* End IMG Overlay Styling */
+
+/* Beginning Tools Used Styling on Rad HTML Page */
+.htmlImg {
+    background-image: url(skills/html5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.cssImg {
+    background-image: url(skills/css3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.jQueryImg {
+    background-image: url(skills/JQuery.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.jsImg {
+    background-image: url(skills/js.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.toolsContent {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+/* End Tools Used Styling on Rad HTML Page */
+
 /* End Work Styling */
 
 /* Beginning Skills Styling */
