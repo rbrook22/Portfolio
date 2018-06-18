@@ -96,6 +96,7 @@ a:hover {
     border: solid 2px;
     width: 50px;
     margin-left: 0;
+    padding-left: 20px;
 }
 /* Beginning About Me Styling */
 .aboutContentContainer {
@@ -143,13 +144,45 @@ a:hover {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
+    padding-left: 20px;
 }
 .spacerImage {
     text-align: center;
     padding-bottom: 30px;
 }
+.button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 48px;
+    line-height: 20px;
+    outline-color: linear-gradient(#308ff8, #30ef91);
+}
+.button:hover {
+    background: linear-gradient(to right, #308ff8, #30ef91);
+    color: white;
+}
+.radImg {
+    background-image: url(imgs/radImgBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 380px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.radContent {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
 
 /* End Work Styling */
+
+/* Beginning Work Styling */
 
 /* Beginning Skills Styling */
 h3 {
