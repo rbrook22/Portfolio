@@ -78,6 +78,9 @@ a:hover {
     color: blue;
     cursor: pointer;
 }
+.name:hover {
+    color: black;
+}
 /* End NavBar Styling */
 .imgContainer {
     display: flex;
@@ -388,8 +391,9 @@ h3 {
     cursor: pointer;
 }
 /* End of Footer Styling */
-
+/* *************************************************************** */
 /* RAD Hiking Page Styling */
+/* Beginning RAD Home Styling */
 .radContentContainer {
     padding-left: 20px;
 }
@@ -402,8 +406,46 @@ h3 {
     width: 400px;
     margin-bottom: 40px;
 }
-/* Beginning RAD Home Styling */
-
+.radContentInfo {
+    font-size: 18px;
+    font-weight:100;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
+.roleContent {
+    padding-left: 20px;
+}
+.roleSection {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: -10px;
+}
+.roleUnderline  {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+.roleInfo {
+    margin-bottom: 50px;
+}
+.scopeContent {
+    padding-left: 20px;
+}
+.scopeSection {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: -10px;
+}
+.scopeUnderline  {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+.scopeInfo {
+margin-bottom: 50px;
+}
 /* End RAD Home Styling */
 
 /* End RAD Hiking Page Styling */
