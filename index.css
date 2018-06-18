@@ -174,15 +174,16 @@ a:hover {
     background-repeat: no-repeat;
     height: 250px;
     width: 380px;
-    margin-left: 20px;
     margin-bottom: 30px;
+}
+.radHiking {
+    padding-left: 20px;
 }
 .radContent {
     font-size: 30px;
     font-weight: 500;
     line-height: 40px;
     margin-top: 5px;
-    padding-left: 20px;
 }
 
 /* End Work Styling */
