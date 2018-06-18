@@ -94,7 +94,9 @@ a:hover {
 
 .line {
     border: solid 2px;
-    width: 50px;
+    width: 30px;
+    border-image: linear-gradient(90deg, #308ff8, #30ef91);
+    border-image-slice: 1;
     margin-left: 0;
     padding-left: 20px;
 }
