@@ -157,7 +157,10 @@ a:hover {
     width: 150px;
     height: 48px;
     line-height: 20px;
-    outline-color: linear-gradient(#308ff8, #30ef91);
+    border: solid 2px;
+    border-image: linear-gradient(90deg, #308ff8, #30ef91);
+    border-image-slice: 1;
+    background-color: rgb(242, 240, 234);
 }
 .button:hover {
     background: linear-gradient(to right, #308ff8, #30ef91);
