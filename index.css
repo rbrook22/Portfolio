@@ -574,14 +574,35 @@ h3 {
     padding-right: 20px;
     margin-bottom: 30px;
 }
+.mobileHome {
+    background-image: url(imgs/radHomePhone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 319px;
+    width: 124px;
+    margin-top: 50px;
+   
+    margin-bottom: 50px; 
+}
 .mobileImg {
     background-image: url(imgs/radPhone.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 400px;
-    width: 300px;
+    height: 373px;
+    width: 186px;
     margin-top: 50px;
-    margin-left: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.aboutImg {
+    background-image: url(imgs/phoneAboutAngle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 319px;
+    width: 124px;
+    margin-top: 50px;
+    
     margin-bottom: 50px;
 }
 .uxSection {
@@ -616,6 +637,16 @@ h3 {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 30px;
+}
+.wireframeTitle {
+    margin-top: 30px;
+}
+.wireFrameHeader {
+    text-align: center;
+}
+.wireFrameLine {
+    margin-left: 170px;
     margin-bottom: 30px;
 }
 /* End RAD Home Styling */
