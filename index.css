@@ -8,10 +8,12 @@ html, body {
 .navOptions {
     display:grid;
     grid-template-columns: 90% 10%;
+    height: 30px;
     width: 100%;
     font-size: 20px;
     position: fixed;
-    background-color: rgba(183, 213, 245, 0.8);
+    background-color: none;
+    transition: background-color .5s ease-in-out;
 }
 .menuIcon {
     background-image: url(icons/burgerMenu.png);
@@ -36,9 +38,6 @@ ul li {
     border: 25px solid;
     border-image: linear-gradient(90deg, #308ff8, #30ef91);
     border-image-slice: 1;
-    /* background-image: url(imgs/homepage.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%; */
     font-size: 20px;
     font-weight: bold;
     
