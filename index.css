@@ -91,6 +91,7 @@ a:hover {
 .imgContainer {
     display: flex;
     justify-content: center;
+    height: 830px;
 }
 .imgMain {
     background-image: url(imgs/imgHome.png);
