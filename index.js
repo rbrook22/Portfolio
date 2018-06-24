@@ -13,3 +13,7 @@ $(document).scroll(function(){
         $(".navOptions").css("background-color", "rgb(242, 240, 234)");
     };
 });
+
+$(function() {
+    $('.imgMain').removeClass('fade-out');
+});

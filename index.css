@@ -101,6 +101,12 @@ a:hover {
     background-position: center;
     height: 500px;
     width: 500px;
+    opacity: 1;
+    transition: 2s opacity .5s;
+}
+.imgMain.fade-out {
+    opacity: 0;
+    transition: none;
 }
 .line {
     border: solid 2px;
@@ -734,7 +740,7 @@ h3 {
     height: 100%;
     position: absolute;
     top: 0;
-    background: rgba(88, 88, 88, .4);
+    background: rgba(88, 88, 88, .2);
     z-index: 99;
     cursor: pointer;
 }
