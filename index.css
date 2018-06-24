@@ -711,7 +711,7 @@ h3 {
     margin-top: 20px;
     position: relative;
     width: 70%;
-    height: 70%;
+    height: 60%;
     padding-bottom: 40%;
     background-color: #4c4c4c;
     border: solid 10px rgba(183, 213, 245, 0.8);
@@ -754,13 +754,14 @@ h3 {
 }
 .dots {
     top: -5px;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     margin: 0 4px;
     position: relative;
     border-radius: 50%;
     display: inline-block;
-    background: rgba(0, 0, 0, .4);
+    background: none;
+    border: 1px solid rgba(183, 213, 245, 0.8);
 }
 .slide_img {
     z-index: -1;
@@ -785,7 +786,7 @@ h3 {
 #i7:checked ~ .nav #dot7,
 #i8:checked ~ .nav #dot8,
 #i9:checked ~ .nav #dot9{
-    background: #fff;
+    background: rgba(183, 213, 245, 0.8);
 }
 /* End Carousel Styling Rad Page */
 
