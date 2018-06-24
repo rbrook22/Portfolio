@@ -3,7 +3,7 @@ $(document).ready(function() {
         $("body").toggleClass("open");
     });
 });
-
+// NavBar Scroll Change Color
 $(document).scroll(function(){
     var height = $(".navOptions").height();
 

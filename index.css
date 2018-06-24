@@ -26,6 +26,16 @@ html, body {
 ul li {
     list-style: none;
 }
+.open .navBar {
+    border: 25px solid;
+    border-image: linear-gradient(90deg, #308ff8, #30ef91);
+    border-image-slice: 1;
+    height: 94.5%;
+}
+.open .navOptions {
+    grid-template-columns: 80% 20%;
+    background-color: none;
+}
 .menuItems {
     overflow: hidden;
     height: 0;
@@ -35,21 +45,11 @@ ul li {
     flex-direction: column;
     justify-content: space-between;
     height: 95%;
-    border: 25px solid;
-    border-image: linear-gradient(90deg, #308ff8, #30ef91);
-    border-image-slice: 1;
     font-size: 20px;
     font-weight: bold;
-    top: 30px;
-    
 }
 .open .menu-items-list {
     margin-top: 100px;
-}
-.open .navBar {
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .open .mainContent {
     display: none;
@@ -141,6 +141,7 @@ a:hover {
     font-weight: 500;
     line-height: 40px;
     margin-top: 5px;
+    width: 380px;
 }
 .aboutContent {
     font-size: 18px;
@@ -177,7 +178,7 @@ a:hover {
 }
 .radImg {
     background-image: url(imgs/radImgBackground.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 250px;
     width: 380px;
@@ -589,9 +590,12 @@ h3 {
 .scopeInfo {
     margin-bottom: 50px;
 }
+/* End RAD Home Styling */
+/* Beginning Rad Tools Section Styling */
 .toolsTitle {
     padding-top: 30px;
 }
+/* End Rad Tools Section Styling */
 .homepageTitle {
     padding-top: 30px;
 }
@@ -688,16 +692,101 @@ h3 {
     padding-right: 20px;
     margin-bottom: 30px;
 }
+.wireframingContainer {
+    height: 500px;
+}
 .wireframeTitle {
     margin-top: 30px;
 }
 .wireFrameHeader {
     text-align: center;
-}
+} 
 .wireFrameLine {
     margin-left: 170px;
     margin-bottom: 30px;
 }
-/* End RAD Home Styling */
+/* Beginning Carousel Styling Rad Page */
+.carousel-slider {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background-color: #4c4c4c;
+    border: solid 10px rgba(183, 213, 245, 0.8);
+}
+.slide_img {
+    position: absolute;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9{
+    display: none;
+}
+.pre, .nxt{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88, 88, 88, .2);
+    z-index: 99;
+    cursor: pointer;
+}
+.pre {
+    left: 0;
+}
+.nxt {
+    right: 0;
+}
+.nav {
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+.dots {
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0, 0, 0, .4);
+}
+.slide_img {
+    z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six,
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine{
+    z-index: 9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5,
+#i6:checked ~ .nav #dot6,
+#i7:checked ~ .nav #dot7,
+#i8:checked ~ .nav #dot8,
+#i9:checked ~ .nav #dot9{
+    background: #fff;
+}
+/* End Carousel Styling Rad Page */
 
 /* End RAD Hiking Page Styling */
