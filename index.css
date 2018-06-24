@@ -92,6 +92,7 @@ a:hover {
 .imgContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 830px;
 }
 .imgMain {
