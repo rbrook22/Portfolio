@@ -17,14 +17,3 @@ $(document).scroll(function(){
 $(function() {
     $('.imgMain').removeClass('fade-out');
 });
-
-// Load Content on Scroll Effect
-$(document).ready( function() {
-    $("#aboutSection").hide(); //hide your div initially
-    var topOfOthDiv = $("#aboutTitle").offset().top;
-    $(window).scroll(function() {
-        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
-            $("#aboutSection").show(); //reached the desired point -- show div
-        }
-    });
-});
