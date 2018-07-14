@@ -230,6 +230,11 @@ a:hover {
 .radImgContainer:hover .overlay, .traceImgContainer:hover .overlay {
     opacity: 1;
 }
+.text .overlayTitle {
+    font-weight: bolder;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
 .text {
     color: black;
     font-size: 18px;
