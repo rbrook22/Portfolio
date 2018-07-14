@@ -213,11 +213,12 @@ a:hover {
     margin-top: 5px;
 }
 /* Beginning IMG Overlay Styling */
-.radImgContainer, traceImgContainer {
+.radImgContainer, .traceImgContainer {
     position: relative;
     height: 250px;
     width: 380px;
-    display:inline-block;
+    display:flex;
+    justify-content: flex-end;
 }
 .overlay {
     position: absolute;
@@ -226,6 +227,7 @@ a:hover {
     transition: all .3s ease;
     opacity: 0;
     background-color: #eee;
+    box-sizing: border-box;
 }
 .radImgContainer:hover .overlay, .traceImgContainer:hover .overlay {
     opacity: 1;
