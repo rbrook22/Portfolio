@@ -195,7 +195,15 @@ a:hover {
     width: 380px;
     margin-bottom: 30px;
 }
-.radHiking {
+.traceImg {
+    background-image: url(imgs/trace.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 380px;
+    margin-bottom: 30px;
+}
+.radHiking, .traceFind {
     padding-left: 20px;
 }
 .radContent {
@@ -205,7 +213,7 @@ a:hover {
     margin-top: 5px;
 }
 /* Beginning IMG Overlay Styling */
-.radImgContainer {
+.radImgContainer, traceImgContainer {
     position: relative;
     height: 250px;
     width: 380px;
@@ -219,7 +227,7 @@ a:hover {
     opacity: 0;
     background-color: #eee;
 }
-.radImgContainer:hover .overlay {
+.radImgContainer:hover .overlay, .traceImgContainer:hover .overlay {
     opacity: 1;
 }
 .text {
@@ -234,7 +242,7 @@ a:hover {
     left:0;
     background-color: rgba(183, 213, 245, 0.8);
 }
-.radImgContainer:hover .overlayFade {
+.radImgContainer:hover .overlayFade, .traceImgContainer:hover .overlayFade {
     height: 100%;
 }
 
