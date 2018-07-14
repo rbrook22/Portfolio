@@ -163,6 +163,10 @@ a:hover {
 /* End About Styling */
 
 /* Beginning Work Styling */
+.work {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .spacerImage {
     text-align: center;
     padding-bottom: 30px;
