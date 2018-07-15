@@ -321,7 +321,8 @@ a:hover {
 }
 .toolsContent {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     margin-bottom: 50px;
 }
 /* =============== End Tools Used Styling on Rad HTML Page ===================== */
@@ -636,6 +637,10 @@ h3 {
 .radContentContainer {
     padding-left: 20px;
 }
+.radHomeContainer {
+    display: flex;
+    justify-content: center;
+}
 .radHomeImg {
     background-image: url(imgs/radHome.png);
     background-size: cover;
@@ -750,6 +755,13 @@ h3 {
 .homepageContent {
     text-align: center;
 }
+.mainImgContainer {
+    display: flex;
+    justify-content: center;
+    box-shadow: border-box;
+    align-items: center;
+    margin: 0;
+}
 .homepageImg {
     background-image: url(imgs/radLanding.png);
     background-size: contain;
@@ -760,6 +772,7 @@ h3 {
 }
 .mobileimgContainer {
     display: flex;
+    justify-content: center;
 }
 .mobileContent {
     text-align: center;
@@ -861,9 +874,26 @@ h3 {
     }
 }
 @media screen and (min-width: 900px) {
+    .radHiking {
+        max-width: 100%;
+    }
     .imgMain {
         height: 800px;
         width: 800px;
+    }
+    .radImg {
+        position: absolute;
+        height: 500px;
+        width: 760px;
+        background-size: contain;
+        /* margin-bottom: 100px; */
+    }
+    .titleSection {
+        margin-right: 400px;
+    }
+    .titleSection p {
+        width: 300px;
+        margin: 0;
     }
     .lineRight {
         float: right;
