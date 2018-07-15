@@ -4,7 +4,7 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(242, 240, 234);
 }
-/* NavBar Styling */
+/* ======================== NavBar Styling ============================ */
 .navOptions {
     display:grid;
     grid-template-columns: 90% 10%;
@@ -88,7 +88,7 @@ a:hover {
 .name:hover {
     color: black;
 }
-/* End NavBar Styling */
+/* ======================= End NavBar Styling ========================== */
 .about {
     transition: all 2s ease 1s;
     opacity: 1;
@@ -128,7 +128,7 @@ a:hover {
     letter-spacing: 2px;
     padding-left: 20px;
 }
-/* Beginning About Me Styling */
+/* ======================= Beginning About Me Styling ========================== */
 .aboutContentContainer {
     margin-left: 10px;
     
@@ -160,9 +160,9 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
 }
-/* End About Styling */
+/* ============================= End About Styling ============================== */
 
-/* Beginning Work Styling */
+/* ========================== Beginning Work Styling =========================== */
 .work {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -216,7 +216,13 @@ a:hover {
     line-height: 40px;
     margin-top: 5px;
 }
-/* Beginning IMG Overlay Styling */
+/* =========================== Beginning IMG Overlay Styling ==================== */
+.radHiking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
 .radImgContainer, .traceImgContainer {
     position: relative;
     height: 250px;
@@ -266,9 +272,9 @@ a:hover {
     color:white;
 
 }
-/* End IMG Overlay Styling */
+/* ============================ End IMG Overlay Styling =========================== */
 
-/* Beginning Tools Used Styling on Rad HTML Page */
+/* ================ Beginning Tools Used Styling on Rad HTML Page ======================== */
 .htmlImg {
     background-image: url(skills/html5.png);
     background-size: cover;
@@ -318,11 +324,11 @@ a:hover {
     grid-template-columns: 50% 50%;
     margin-bottom: 50px;
 }
-/* End Tools Used Styling on Rad HTML Page */
+/* =============== End Tools Used Styling on Rad HTML Page ===================== */
 
-/* End Work Styling */
+/* ======================= End Work Styling =============================== */
 
-/* Beginning Skills Styling */
+/* ========================= Beginning Skills Styling ========================== */
 .inner {
     display: flex;
     flex-direction: column;
@@ -511,9 +517,9 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-/* End Skills Styling */
+/* ======================= End Skills Styling ============================= */
 
-/* Beginning Footer Styling */
+/* ======================== Beginning Footer Styling ========================== */
 .grow { 
     transition: all .2s ease-in-out; 
 }
@@ -620,13 +626,13 @@ h3 {
 .resume:hover{
     background-image: url(icons/resume.png);
 }
-/* End of Footer Styling */
+/* ===================== End of Footer Styling ========================= */
 
 /* ==========================================================*/
 /* RAD Hiking Page Styling */
 /* ==========================================================*/
 
-/* Beginning RAD Home Styling */
+/* ====================== Beginning RAD Home Styling ========================== */
 .radContentContainer {
     padding-left: 20px;
 }
@@ -724,12 +730,12 @@ h3 {
     width: 200px;
 }
 
-/* End RAD Home Styling */
-/* Beginning Rad Tools Section Styling */
+/* ======================== End RAD Home Styling ============================ */
+/* =============== Beginning Rad Tools Section Styling ======================== */
 .toolsTitle {
     padding-top: 30px;
 }
-/* End Rad Tools Section Styling */
+/* ================= End Rad Tools Section Styling ========================== */
 .homepageTitle {
     padding-top: 30px;
 }
@@ -828,10 +834,18 @@ h3 {
 }
 
 
-/* End RAD Hiking Page Styling */
+/* ===================== End RAD Hiking Page Styling ======================= */
+
+/* =============================================================================== */
 
 /* ***************** BEGINNING MEDIA QUERIES ******************* */
+
+/* -==================================================================================== */
 @media screen and (min-width: 600px) {
+    .imgMain {
+        height: 600px;
+        width: 600px;
+    }
     .inner {
         display: flex;
         flex-direction: column;
@@ -847,6 +861,14 @@ h3 {
     }
 }
 @media screen and (min-width: 900px) {
+    .imgMain {
+        height: 800px;
+        width: 800px;
+    }
+    .lineRight {
+        float: right;
+        margin: 0;
+    }
     .skillsList {
         grid-template-columns: 1fr 1fr 1fr;
     }
