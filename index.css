@@ -246,7 +246,7 @@ a:hover {
     padding-bottom: 10px;
 }
 .text {
-    color: black;
+    color: white;
     font-size: 18px;
     text-align: center;
 }
@@ -255,7 +255,7 @@ a:hover {
     width: 100%;
     top:0;
     left:0;
-    background-color: rgba(183, 213, 245, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .radImgContainer:hover .overlayFade, .traceImgContainer:hover .overlayFade {
     height: 100%;
@@ -268,7 +268,7 @@ a:hover {
 
 }
 .overlayButton:hover {
-    background-color: rgba(105, 105, 105, 0.8);
+    background-color: rgba(183, 213, 245, 0.8);
     color:white;
 
 }
@@ -830,7 +830,8 @@ h3 {
     text-align: center;
 }
 .uxLine {
-    margin-left: 130px;
+    margin-left: 39% !important;
+    margin-right: 50% !important;
 }
 .uxTitle {
     margin-top: 40px;
@@ -875,7 +876,7 @@ h3 {
 }
 @media screen and (min-width: 900px) {
     .radHiking {
-        max-width: 100%;
+        margin-bottom: 100px;
     }
     .imgMain {
         height: 800px;
@@ -888,6 +889,10 @@ h3 {
         background-size: contain;
         /* margin-bottom: 100px; */
     }
+    .radImgContainer, .traceImgContainer {
+        height: 500px;
+        width: 760px;
+    }
     .titleSection {
         margin-right: 400px;
     }
@@ -899,7 +904,29 @@ h3 {
         float: right;
         margin: 0;
     }
+    .traceFind {
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    .traceSection {
+        top: -25%;
+        margin-left: 800px;
+    }
+    .traceImg {
+        height: 500px;
+        width: 760px;
+    }
     .skillsList {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .radHomeImg {
+        height: 600px;
+        width: 800px;
+    }
+    .lineHome {
+        width: 10%;
+    }
+    .uxLine {
+        /* width: 10%; */
     }
 }
