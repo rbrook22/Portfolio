@@ -323,6 +323,12 @@ a:hover {
 /* End Work Styling */
 
 /* Beginning Skills Styling */
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 h3 {
     margin-bottom: 50px;
     font-style: normal;
@@ -825,7 +831,7 @@ h3 {
 /* End RAD Hiking Page Styling */
 
 /* ***************** BEGINNING MEDIA QUERIES ******************* */
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
     .inner {
         display: flex;
         flex-direction: column;
@@ -838,5 +844,10 @@ h3 {
     }
     .lineBreak {
         display: none;
+    }
+}
+@media screen and (min-width: 900px) {
+    .skillsList {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
