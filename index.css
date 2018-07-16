@@ -904,9 +904,24 @@ h3 {
     }
 }
 @media screen and (min-width: 900px) {
+    .img-container {
+        margin-top: 100px;
+    }
+    .aboutMePic {
+        height: 400px;
+        width: 400px;
+        margin-right: 500px;
+    }
     .aboutContentTitle {
         font-size: 48px;
         line-height: 64px;
+        margin-top: -400px;
+        margin-left: 950px;
+        width: 600px;
+    }
+    .aboutLine {
+        margin-left: 50% !important;
+        margin-bottom: 200px;
     }
     .aboutContent {
         font-size: 20px;
