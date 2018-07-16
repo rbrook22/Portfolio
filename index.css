@@ -877,6 +877,14 @@ h3 {
     }
 }
 @media screen and (min-width: 900px) {
+    .aboutContentTitle {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .aboutContent {
+        font-size: 20px;
+        line-height: 40px;
+    }
     .radHiking {
         margin-bottom: 100px;
     }
@@ -899,8 +907,10 @@ h3 {
         margin-right: 400px;
     }
     .titleSection p {
-        width: 300px;
+        width: 600px;
         margin: 0;
+        font-size: 20px;
+        line-height: 36px;
     }
     .lineRight {
         float: right;
@@ -914,12 +924,19 @@ h3 {
         top: -25%;
         margin-left: 800px;
     }
+    .traceSection p {
+        font-size: 20px;
+        line-height: 36px;
+        width: 600px;
+    }
     .traceImg {
         height: 500px;
         width: 760px;
     }
     .skillsList {
         grid-template-columns: 1fr 1fr 1fr;
+        font-size: 20px;
+        line-height: 36px;
     }
     /* =============== RAD PAGE STYLING @ MEDIA 900 =============== */
     .radContent {
@@ -938,6 +955,10 @@ h3 {
         height: 660px;
         width: 700px;
         border-radius: 5px;
+    }
+    .text {
+        font-size: 20px;
+        margin-top: 100px;
     }
     .roleContent {
         font-size: 20px;
