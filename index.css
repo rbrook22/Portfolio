@@ -5,6 +5,9 @@ html, body {
     background-color: rgb(242, 240, 234);
 }
 /* ======================== NavBar Styling ============================ */
+.menuWord {
+    display: none;
+}
 .navOptions {
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -914,6 +917,17 @@ h3 {
 
 /* -==================================================================================== */
 @media screen and (min-width: 600px) {
+    .menuIcon {
+        display: none;
+    }
+    .menuWord {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .open .menuWord {
+        margin-right: 50px;
+    }
     .imgMain {
         height: 600px;
         width: 600px;
