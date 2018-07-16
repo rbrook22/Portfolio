@@ -904,6 +904,7 @@ h3 {
         width: 760px;
     }
     .titleSection {
+        margin-top: -400px;
         margin-right: 400px;
     }
     .titleSection p {
@@ -921,7 +922,7 @@ h3 {
         margin-bottom: 200px;
     }
     .traceSection {
-        top: -25%;
+        margin-top: -400px;
         margin-left: 800px;
     }
     .traceSection p {
