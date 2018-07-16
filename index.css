@@ -542,7 +542,7 @@ h3 {
     position: absolute;
     z-index: 1;
     bottom: 125%;
-    margin-left: -60px;
+    margin-left: -20px;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -556,7 +556,7 @@ h3 {
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
-.toolTip:hover .toolTipText {
+.icons:hover + .toolTipText {
     visibility: visible;
     opacity: 1;
 }
