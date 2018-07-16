@@ -41,11 +41,13 @@ ul li {
     height: 94.5%;
 }
 .open .navOptions {
-    grid-template-columns: 1fr 1fr;
-    background-color: none;
+    width: unset;
 }
 .open .menuIcon {
-    margin-right: 50px;
+    display: none;
+}
+.open .menuWord {
+    display: none;
 }
 .menuItems {
     overflow: hidden;
