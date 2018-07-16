@@ -871,6 +871,13 @@ h3 {
     width: 400px;
     margin-bottom: 40px;
 }
+.traceContentInfo {
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+}
 .traceCss {
     margin-top: 50px;
     margin-right: 40px;
@@ -1039,8 +1046,13 @@ h3 {
         font-size: 20px;
         line-height: 36px;
     }
+    /* Trace & Find Page */
     .traceHomeImg {
         height: 600px;
         width: 800px;
+    }
+    .traceContentInfo {
+        font-size: 20px;
+        line-height: 36px;
     }
 }
