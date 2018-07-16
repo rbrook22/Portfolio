@@ -207,7 +207,7 @@ a:hover {
     width: 380px;
     margin-bottom: 30px;
 }
-.radHiking, .traceFind {
+.radHiking {
     padding-left: 20px;
 }
 .radContent {
@@ -854,9 +854,6 @@ h3 {
 /* ===================== End RAD Hiking Page Styling ======================= */
 
 /* ==================== Trace & Find Page Styling =========================== */
-.traceFind {
-    margin: 20px;
-}
 .traceContainerImg {
     display: flex;
     justify-content: center;
@@ -881,6 +878,23 @@ h3 {
 .traceCss {
     margin-top: 50px;
     margin-right: 40px;
+}
+.traceHomepage {
+    background-image: url(imgs/traceHomepage.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 330px;
+    width: 350px;
+    margin-top: 70px;
+}
+.tracePhone {
+    background-image: url(imgs/tracePhone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 419px;
+    width: 224px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -1047,6 +1061,9 @@ h3 {
         line-height: 36px;
     }
     /* Trace & Find Page */
+    .traceTools {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .traceHomeImg {
         height: 600px;
         width: 800px;
@@ -1054,5 +1071,13 @@ h3 {
     .traceContentInfo {
         font-size: 20px;
         line-height: 36px;
+    }
+    .traceHomepage {
+        height: 660px;
+        width: 700px;
+    }
+    .tracePhone {
+        height: 523px;
+        width: 280px;
     }
 }
