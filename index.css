@@ -852,6 +852,31 @@ h3 {
 
 /* ===================== End RAD Hiking Page Styling ======================= */
 
+/* ==================== Trace & Find Page Styling =========================== */
+.traceFind {
+    margin: 20px;
+}
+.traceImgContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.traceHomeImg {
+    background-image: url(imgs/trace.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+.traceCss {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+
+
+
 /* =============================================================================== */
 
 /* ***************** BEGINNING MEDIA QUERIES ******************* */
@@ -995,5 +1020,9 @@ h3 {
     .uxContent {
         font-size: 20px;
         line-height: 36px;
+    }
+    .traceHomeImg {
+        height: 600px;
+        width: 800px;
     }
 }
