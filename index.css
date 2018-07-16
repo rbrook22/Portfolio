@@ -4,7 +4,7 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
     background-color: rgb(242, 240, 234);
 }
-/* NavBar Styling */
+/* ======================== NavBar Styling ============================ */
 .navOptions {
     display:grid;
     grid-template-columns: 90% 10%;
@@ -88,7 +88,7 @@ a:hover {
 .name:hover {
     color: black;
 }
-/* End NavBar Styling */
+/* ======================= End NavBar Styling ========================== */
 .about {
     transition: all 2s ease 1s;
     opacity: 1;
@@ -128,7 +128,7 @@ a:hover {
     letter-spacing: 2px;
     padding-left: 20px;
 }
-/* Beginning About Me Styling */
+/* ======================= Beginning About Me Styling ========================== */
 .aboutContentContainer {
     margin-left: 10px;
     
@@ -160,9 +160,13 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
 }
-/* End About Styling */
+/* ============================= End About Styling ============================== */
 
-/* Beginning Work Styling */
+/* ========================== Beginning Work Styling =========================== */
+.work {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .spacerImage {
     text-align: center;
     padding-bottom: 30px;
@@ -212,12 +216,17 @@ a:hover {
     line-height: 40px;
     margin-top: 5px;
 }
-/* Beginning IMG Overlay Styling */
-.radImgContainer, traceImgContainer {
+/* =========================== Beginning IMG Overlay Styling ==================== */
+.radHiking {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
+.radImgContainer, .traceImgContainer {
     position: relative;
     height: 250px;
     width: 380px;
-    display:inline-block;
 }
 .overlay {
     position: absolute;
@@ -226,12 +235,18 @@ a:hover {
     transition: all .3s ease;
     opacity: 0;
     background-color: #eee;
+    box-sizing: border-box;
 }
 .radImgContainer:hover .overlay, .traceImgContainer:hover .overlay {
     opacity: 1;
 }
+.text .overlayTitle {
+    font-weight: bolder;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
 .text {
-    color: black;
+    color: white;
     font-size: 18px;
     text-align: center;
 }
@@ -240,12 +255,11 @@ a:hover {
     width: 100%;
     top:0;
     left:0;
-    background-color: rgba(183, 213, 245, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .radImgContainer:hover .overlayFade, .traceImgContainer:hover .overlayFade {
     height: 100%;
 }
-
 .overlayButton {
     margin-top: 30px;
     width: 100px;
@@ -254,13 +268,13 @@ a:hover {
 
 }
 .overlayButton:hover {
-    background-color: rgba(105, 105, 105, 0.8);
+    background-color: rgba(183, 213, 245, 0.8);
     color:white;
 
 }
-/* End IMG Overlay Styling */
+/* ============================ End IMG Overlay Styling =========================== */
 
-/* Beginning Tools Used Styling on Rad HTML Page */
+/* ================ Beginning Tools Used Styling on Rad HTML Page ======================== */
 .htmlImg {
     background-image: url(skills/html5.png);
     background-size: cover;
@@ -307,14 +321,21 @@ a:hover {
 }
 .toolsContent {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     margin-bottom: 50px;
 }
-/* End Tools Used Styling on Rad HTML Page */
+/* =============== End Tools Used Styling on Rad HTML Page ===================== */
 
-/* End Work Styling */
+/* ======================= End Work Styling =============================== */
 
-/* Beginning Skills Styling */
+/* ========================= Beginning Skills Styling ========================== */
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 h3 {
     margin-bottom: 50px;
     font-style: normal;
@@ -497,9 +518,9 @@ h3 {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-/* End Skills Styling */
+/* ======================= End Skills Styling ============================= */
 
-/* Beginning Footer Styling */
+/* ======================== Beginning Footer Styling ========================== */
 .grow { 
     transition: all .2s ease-in-out; 
 }
@@ -513,7 +534,7 @@ h3 {
 .toolTip .toolTipText {
     visibility: hidden;
     width: 80px;
-    background-color: #555;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -533,7 +554,7 @@ h3 {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: black transparent transparent transparent;
 }
 .toolTip:hover .toolTipText {
     visibility: visible;
@@ -606,15 +627,19 @@ h3 {
 .resume:hover{
     background-image: url(icons/resume.png);
 }
-/* End of Footer Styling */
+/* ===================== End of Footer Styling ========================= */
 
 /* ==========================================================*/
 /* RAD Hiking Page Styling */
 /* ==========================================================*/
 
-/* Beginning RAD Home Styling */
+/* ====================== Beginning RAD Home Styling ========================== */
 .radContentContainer {
     padding-left: 20px;
+}
+.radHomeContainer {
+    display: flex;
+    justify-content: center;
 }
 .radHomeImg {
     background-image: url(imgs/radHome.png);
@@ -648,6 +673,8 @@ h3 {
     margin-bottom: 10px;
 }
 .roleInfo {
+    font-size: 18px;
+    font-weight: 500;
     margin-bottom: 50px;
 }
 .scopeContent {
@@ -710,12 +737,12 @@ h3 {
     width: 200px;
 }
 
-/* End RAD Home Styling */
-/* Beginning Rad Tools Section Styling */
+/* ======================== End RAD Home Styling ============================ */
+/* =============== Beginning Rad Tools Section Styling ======================== */
 .toolsTitle {
     padding-top: 30px;
 }
-/* End Rad Tools Section Styling */
+/* ================= End Rad Tools Section Styling ========================== */
 .homepageTitle {
     padding-top: 30px;
 }
@@ -730,6 +757,13 @@ h3 {
 .homepageContent {
     text-align: center;
 }
+.mainImgContainer {
+    display: flex;
+    justify-content: center;
+    box-shadow: border-box;
+    align-items: center;
+    margin: 0;
+}
 .homepageImg {
     background-image: url(imgs/radLanding.png);
     background-size: contain;
@@ -740,6 +774,7 @@ h3 {
 }
 .mobileimgContainer {
     display: flex;
+    justify-content: center;
 }
 .mobileContent {
     text-align: center;
@@ -797,7 +832,8 @@ h3 {
     text-align: center;
 }
 .uxLine {
-    margin-left: 130px;
+    margin-left: 39% !important;
+    margin-right: 50% !important;
 }
 .uxTitle {
     margin-top: 40px;
@@ -814,4 +850,150 @@ h3 {
 }
 
 
-/* End RAD Hiking Page Styling */
+/* ===================== End RAD Hiking Page Styling ======================= */
+
+/* =============================================================================== */
+
+/* ***************** BEGINNING MEDIA QUERIES ******************* */
+
+/* -==================================================================================== */
+@media screen and (min-width: 600px) {
+    .imgMain {
+        height: 600px;
+        width: 600px;
+    }
+    .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .skillsList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .lineBreak {
+        display: none;
+    }
+}
+@media screen and (min-width: 900px) {
+    .aboutContentTitle {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .aboutContent {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .radHiking {
+        margin-bottom: 100px;
+    }
+    .imgMain {
+        height: 800px;
+        width: 800px;
+    }
+    .radImg {
+        position: absolute;
+        height: 500px;
+        width: 760px;
+        background-size: contain;
+        /* margin-bottom: 100px; */
+    }
+    .radImgContainer, .traceImgContainer {
+        height: 500px;
+        width: 760px;
+    }
+    .titleSection {
+        margin-top: -400px;
+        margin-right: 400px;
+    }
+    .titleSection p {
+        width: 600px;
+        margin-right: 600px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .lineRight {
+        float: right;
+        margin-right: 95% !important;
+    }
+    .traceFind {
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    .traceSection {
+        margin-top: -400px;
+        margin-left: 800px;
+    }
+    .traceSection p {
+        font-size: 20px;
+        line-height: 36px;
+        width: 600px;
+    }
+    .traceImg {
+        height: 500px;
+        width: 760px;
+    }
+    .skillsList {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    /* =============== RAD PAGE STYLING @ MEDIA 900 =============== */
+    .radContent {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .radContentInfo {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .homepageContent {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .homepageImg {
+        height: 660px;
+        width: 700px;
+        border-radius: 5px;
+    }
+    .text {
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    
+    .roleContent {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .radHomeImg {
+        height: 600px;
+        width: 800px;
+    }
+    .lineHome {
+        width: 10%;
+    }
+    .mobileContent {
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .mobileHome {
+        height: 399px;
+        width: 155px;
+    }
+    .mobileImg {
+        height: 467px;
+        width: 233px;
+    }
+    .aboutImg {
+        height: 399px;
+        width: 155px;
+    }
+    .uxLine {
+        /* width: 10%; */
+    }
+    .uxContent {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
