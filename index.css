@@ -534,7 +534,7 @@ h3 {
 .toolTip .toolTipText {
     visibility: hidden;
     width: 80px;
-    background-color: #555;
+    background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -554,7 +554,7 @@ h3 {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #555 transparent transparent transparent;
+    border-color: black transparent transparent transparent;
 }
 .toolTip:hover .toolTipText {
     visibility: visible;
@@ -908,13 +908,13 @@ h3 {
     }
     .titleSection p {
         width: 600px;
-        margin: 0;
+        margin-right: 600px;
         font-size: 20px;
         line-height: 36px;
     }
     .lineRight {
         float: right;
-        margin: 0;
+        margin-right: 95% !important;
     }
     .traceFind {
         margin-top: 100px;
@@ -960,6 +960,7 @@ h3 {
         font-size: 20px;
         margin-top: 100px;
     }
+    
     .roleContent {
         font-size: 20px;
         line-height: 36px;
