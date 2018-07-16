@@ -856,7 +856,7 @@ h3 {
 .traceFind {
     margin: 20px;
 }
-.traceImgContainer {
+.traceContainerImg {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -865,6 +865,7 @@ h3 {
     background-image: url(imgs/trace.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     height: 300px;
     width: 400px;
     margin-bottom: 40px;
