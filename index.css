@@ -1,342 +1,344 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(242, 240, 234);
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(242, 240, 234);
 }
 /* ======================== NavBar Styling ============================ */
 .menuWord {
-    display: none;
+  display: none;
 }
 .navOptions {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    height: 30px;
-    width: 100%;
-    font-size: 20px;
-    position: fixed;
-    background-color: none;
-    transition: background-color .5s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 30px;
+  width: 100%;
+  font-size: 20px;
+  position: fixed;
+  background-color: none;
+  transition: background-color 0.5s ease-in-out;
 }
 .menuIconContainer {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 .menuIcon {
-    background-image: url(icons/burgerMenu.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    cursor: pointer;
+  background-image: url(icons/burgerMenu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
 }
 ul li {
-    list-style: none;
+  list-style: none;
 }
 .open .navBar {
-    border: 25px solid;
-    border-image: linear-gradient(90deg, #308ff8, #30ef91);
-    border-image-slice: 1;
-    height: 94.5%;
+  border: 25px solid;
+  border-image: linear-gradient(90deg, #308ff8, #30ef91);
+  border-image-slice: 1;
+  height: 94.5%;
 }
 .open .navOptions {
-    width: unset;
+  width: unset;
 }
 .open .menuIcon {
-    display: none;
+  display: none;
 }
 .open .menuWord {
-    display: none;
+  display: none;
 }
 .menuItems {
-    overflow: hidden;
-    height: 0;
+  overflow: hidden;
+  height: 0;
 }
-.open .menuItems{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 95%;
-    font-size: 20px;
-    font-weight: bold;
+.open .menuItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95%;
+  font-size: 20px;
+  font-weight: bold;
 }
 .open .menu-items-list {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 .open .mainContent {
-    display: none;
+  display: none;
 }
 .open .home {
-    font-size: 32px;
-    margin-bottom: 56px;
-    margin-top: 16px;
-    line-height: 48px;
+  font-size: 32px;
+  margin-bottom: 56px;
+  margin-top: 16px;
+  line-height: 48px;
 }
-.open .about, .skills {
-    display: none;
+.open .about,
+.skills {
+  display: none;
 }
 .open .work {
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 8px;
-    line-height: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 8px;
+  line-height: 20px;
 }
 .open .projects {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    line-height: 48px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 48px;
 }
 .open footer {
-    display: none;
+  display: none;
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 a:hover {
-    color: blue;
-    cursor: pointer;
+  color: blue;
+  cursor: pointer;
 }
 .name:hover {
-    color: black;
+  color: black;
 }
 /* ======================= End NavBar Styling ========================== */
 .about {
-    transition: all 2s ease 1s;
-    opacity: 1;
+  transition: all 2s ease 1s;
+  opacity: 1;
 }
 .imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 830px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 830px;
 }
 .imgMain {
-    background-image: url(imgs/imgHome.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 500px;
-    width: 500px;
-    opacity: 1;
-    transition: 2s opacity .5s;
+  background-image: url(imgs/imgHome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  width: 500px;
+  opacity: 1;
+  transition: 2s opacity 0.5s;
 }
 .imgMain.fade-out {
-    opacity: 0;
-    transition: none;
+  opacity: 0;
+  transition: none;
 }
 .line {
-    border: solid 2px;
-    width: 30px;
-    border-image: linear-gradient(90deg, #308ff8, #30ef91);
-    border-image-slice: 1;
-    margin-left: 0;
-    padding-left: 20px;
+  border: solid 2px;
+  width: 30px;
+  border-image: linear-gradient(90deg, #308ff8, #30ef91);
+  border-image-slice: 1;
+  margin-left: 0;
+  padding-left: 20px;
 }
 .title {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding-left: 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-left: 20px;
 }
 /* ======================= Beginning About Me Styling ========================== */
 .aboutContentContainer {
-    margin-left: 10px;
-    
+  margin-left: 10px;
 }
 .img-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .aboutMePic {
-    background-image: url(imgs/me.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+  background-image: url(imgs/me.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 300px;
 }
 .aboutContainerSpacing {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .aboutContentTitle {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 40px;
-    margin-top: 5px;
-    width: 380px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 5px;
+  width: 380px;
 }
 .aboutContent {
-    font-size: 18px;
-    line-height: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /* ============================= End About Styling ============================== */
 
 /* ========================== Beginning Work Styling =========================== */
 .work {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .spacerImage {
-    text-align: center;
-    padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 .button {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    width: 150px;
-    height: 48px;
-    line-height: 20px;
-    border: solid 2px;
-    border-image: linear-gradient(90deg, #308ff8, #30ef91);
-    border-image-slice: 1;
-    position: left bottom;
-    background-color: rgb(242, 240, 234);
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  width: 150px;
+  height: 48px;
+  line-height: 20px;
+  border: solid 2px;
+  border-image: linear-gradient(90deg, #308ff8, #30ef91);
+  border-image-slice: 1;
+  position: left bottom;
+  background-color: rgb(242, 240, 234);
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
 }
-.button:hover{
-    background: linear-gradient(to right, #308ff8, #30ef91);
-    color: white;
+.button:hover {
+  background: linear-gradient(to right, #308ff8, #30ef91);
+  color: white;
 }
 .radImg {
-    background-image: url(imgs/radImgBackground.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 380px;
-    margin-bottom: 30px;
+  background-image: url(imgs/radImgBackground.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 380px;
+  margin-bottom: 30px;
 }
 .traceImg {
-    background-image: url(imgs/trace.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 380px;
-    margin-bottom: 30px;
+  background-image: url(imgs/trace.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 380px;
+  margin-bottom: 30px;
 }
 .radHiking {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .radContent {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 40px;
-    margin-top: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 5px;
 }
 /* =========================== Beginning IMG Overlay Styling ==================== */
 .radHiking {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
 }
-.radImgContainer, .traceImgContainer {
-    position: relative;
-    height: 250px;
-    width: 380px;
+.radImgContainer,
+.traceImgContainer {
+  position: relative;
+  height: 250px;
+  width: 380px;
 }
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all .3s ease;
-    opacity: 0;
-    background-color: #eee;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: #eee;
+  box-sizing: border-box;
 }
-.radImgContainer:hover .overlay, .traceImgContainer:hover .overlay {
-    opacity: 1;
+.radImgContainer:hover .overlay,
+.traceImgContainer:hover .overlay {
+  opacity: 1;
 }
 .text .overlayTitle {
-    font-weight: bolder;
-    text-decoration: underline;
-    padding-bottom: 10px;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding-bottom: 10px;
 }
 .text {
-    color: white;
-    font-size: 18px;
-    text-align: center;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
 .overlayFade {
-    height: 0;
-    width: 100%;
-    top:0;
-    left:0;
-    background-color: rgba(0, 0, 0, 0.8);
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
 }
-.radImgContainer:hover .overlayFade, .traceImgContainer:hover .overlayFade {
-    height: 100%;
+.radImgContainer:hover .overlayFade,
+.traceImgContainer:hover .overlayFade {
+  height: 100%;
 }
 .overlayButton {
-    margin-top: 30px;
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-
+  margin-top: 30px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
 }
 .overlayButton:hover {
-    background-color: rgba(183, 213, 245, 0.8);
-    color:white;
-
+  background-color: rgba(183, 213, 245, 0.8);
+  color: white;
 }
 /* ============================ End IMG Overlay Styling =========================== */
 
 /* ================ Beginning Tools Used Styling on Rad HTML Page ======================== */
 .htmlImg {
-    background-image: url(skills/html5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
+  background-image: url(skills/html5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .cssImg {
-    background-image: url(skills/css3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
+  background-image: url(skills/css3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .jQueryImg {
-    background-image: url(skills/JQuery.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
+  background-image: url(skills/JQuery.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .jsImg {
-    background-image: url(skills/js.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
+  background-image: url(skills/js.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .toolsContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 /* =============== End Tools Used Styling on Rad HTML Page ===================== */
 
@@ -344,302 +346,303 @@ a:hover {
 
 /* ========================= Beginning Skills Styling ========================== */
 .inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 h3 {
-    margin-bottom: 50px;
-    font-style: normal;
-    font-weight: 300;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: 300;
 }
-.skillsTitle, .learningTitle {
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 2px;
+.skillsTitle,
+.learningTitle {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .skillsList {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
 .html {
-    background-image: url(skills/html5.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  background-image: url(skills/html5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .lineBreak {
-    border-bottom: solid 2px rgba(0, 0, 0, 0.2);
-    width:90%;
-    height: 5%;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  height: 5%;
 }
 .css {
-    background-image: url(skills/css3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 75px;
-    width: 75px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/css3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .javascript {
-    background-image: url(skills/js.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/js.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .jquery {
-    background-image: url(skills/JQuery.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/JQuery.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .python {
-    background-image: url(skills/python.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/python.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .nodejs {
-    background-image: url(skills/njs.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/njs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .express {
-    background-image: url(skills/express.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/express.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .react {
-    background-image: url(skills/react.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/react.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .redux {
-    background-image: url(skills/redux.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/redux.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .sql {
-    background-image: url(skills/sql.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/sql.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .git {
-    background-image: url(skills/github.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/github.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .swift {
-    background-image: url(skills/swift.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 100px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/swift.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .photoshop {
-    background-image: url(skills/photoshop.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/photoshop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .illustrator {
-    background-image: url(skills/illustrator.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/illustrator.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .inDesign {
-    background-image: url(skills/inDesign.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/inDesign.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .sketch {
-    background-image: url(skills/sketch.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90px;
-    width: 90px;
-    margin-right: 5px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  background-image: url(skills/sketch.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 90px;
+  margin-right: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 /* ======================= End Skills Styling ============================= */
 
 /* ======================== Beginning Footer Styling ========================== */
-.grow { 
-    transition: all .2s ease-in-out; 
+.grow {
+  transition: all 0.2s ease-in-out;
 }
-.grow:hover { 
-    transform: scale(1.3); 
+.grow:hover {
+  transform: scale(1.3);
 }
 .toolTip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .toolTip .toolTipText {
-    visibility: hidden;
-    width: 80px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    margin-left: -20px;
-    margin-bottom: 10px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .toolTip .toolTipText::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
 .icons:hover + .toolTipText {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 .contactSection {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .contactTitle {
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 .contactList {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .icons {
-    height: 40px;
-    width: 40px;
-    margin-right: 11px;
-    margin-bottom: 5px;
-    cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-right: 11px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 .email {
-    background-image: url(icons/emailBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/emailBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.email:hover{
-    background-image: url(icons/email.png);
+.email:hover {
+  background-image: url(icons/email.png);
 }
 .linkedIn {
-    background-image: url(icons/linkedinBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/linkedinBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.linkedIn:hover{
-    background-image: url(icons/linkedin.png);
+.linkedIn:hover {
+  background-image: url(icons/linkedin.png);
 }
 .blog {
-    background-image: url(icons/mediumBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/mediumBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.blog:hover{
-    background-image: url(icons/medium.png);
+.blog:hover {
+  background-image: url(icons/medium.png);
 }
 .gitHub {
-    background-image: url(icons/githubBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/githubBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.gitHub:hover{
-    background-image: url(icons/github.png);
+.gitHub:hover {
+  background-image: url(icons/github.png);
 }
 .youTube {
-    background-image: url(icons/youtubeBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/youtubeBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.youTube:hover{
-    background-image: url(icons/youTube.png);
+.youTube:hover {
+  background-image: url(icons/youTube.png);
 }
 .resume {
-    background-image: url(icons/resumeBlack.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(icons/resumeBlack.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.resume:hover{
-    background-image: url(icons/resume.png);
+.resume:hover {
+  background-image: url(icons/resume.png);
 }
 /* ===================== End of Footer Styling ========================= */
 
@@ -649,269 +652,265 @@ h3 {
 
 /* ====================== Beginning RAD Home Styling ========================== */
 .radContentContainer {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .radHomeContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .radHomeImg {
-    background-image: url(imgs/radHome.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
-    width: 400px;
-    margin-bottom: 40px;
+  background-image: url(imgs/radHome.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  margin-bottom: 40px;
 }
 .radContentInfo {
-    font-size: 18px;
-    line-height: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 }
 .roleContent {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .roleSection {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: -10px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: -10px;
 }
-.roleUnderline  {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -3px;
-    line-height: 0;
-    margin-bottom: 10px;
+.roleUnderline {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 0;
+  margin-bottom: 10px;
 }
 .roleInfo {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
 .scopeContent {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 .scopeSection {
-    font-size: 18px;
-    font-weight: 500;
-    padding-bottom: -10px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: -10px;
 }
-.scopeUnderline  {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -3px;
-    line-height: 0;
-    margin-bottom: 10px;
+.scopeUnderline {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -3px;
+  line-height: 0;
+  margin-bottom: 10px;
 }
 .scopeInfo {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 .walkthrough {
-    padding: 20px;
-    background-color: rgba(183, 213, 245, 0.8);
-    height: 800px;
+  padding: 20px;
+  background-color: rgba(183, 213, 245, 0.8);
+  height: 800px;
 }
 .walkthroughContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content {
-    background-image: url(imgs/phoneImage.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 300px;
-    height: 500px;
-    margin: 0 auto;
-    padding: 20px;
+  background-image: url(imgs/phoneImage.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .content video {
-    width: 350px;
-    display: block;
-    height: 400px;
+  width: 350px;
+  display: block;
+  height: 400px;
 }
 .content:before {
-    content: '';
-    position: absolute;
-    border-radius: 5px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .radImgWalk {
-    background-image: url(imgs/phoneImage.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 200px;
+  background-image: url(imgs/phoneImage.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 200px;
 }
 
 /* ======================== End RAD Home Styling ============================ */
 /* =============== Beginning Rad Tools Section Styling ======================== */
 .toolsTitle {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 /* ================= End Rad Tools Section Styling ========================== */
 .homepageTitle {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 .homepageInfo {
-    font-size: 18px;
-    line-height: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 30px;
-    background-color: rgba(183, 213, 245, 0.8);  
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(183, 213, 245, 0.8);
 }
 .homepageContent {
-    text-align: center;
+  text-align: center;
 }
 .mainImgContainer {
-    display: flex;
-    justify-content: center;
-    box-shadow: border-box;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: border-box;
+  align-items: center;
+  margin: 0;
 }
 .homepageImg {
-    background-image: url(imgs/radLanding.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 330px;
-    width: 350px;
-    margin-top: 70px;
+  background-image: url(imgs/radLanding.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 330px;
+  width: 350px;
+  margin-top: 70px;
 }
 .mobileimgContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .mobileContent {
-    text-align: center;
-    font-size: 18px;
-    line-height: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
 }
 .mobileHome {
-    background-image: url(imgs/radHomePhone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 319px;
-    width: 124px;
-    margin-top: 50px;
-    margin-bottom: 50px; 
+  background-image: url(imgs/radHomePhone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 319px;
+  width: 124px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .mobileImg {
-    background-image: url(imgs/radPhone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 373px;
-    width: 186px;
-    margin-top: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+  background-image: url(imgs/radPhone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 373px;
+  width: 186px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
 .aboutImg {
-    background-image: url(imgs/phoneAboutAngle.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 319px;
-    width: 124px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  background-image: url(imgs/phoneAboutAngle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 319px;
+  width: 124px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .uxSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(183, 213, 245, 0.8);
-    height: 700px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(183, 213, 245, 0.8);
+  height: 700px;
+  width: 100%;
 }
 .uxContainer {
-    background-color: white;
-    height: 500px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: 30px;
-    margin-left: 30px;
-    text-align: center;
+  background-color: white;
+  height: 500px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  text-align: center;
 }
 .uxLine {
-    margin-left: 39% !important;
-    margin-right: 50% !important;
+  margin-left: 39% !important;
+  margin-right: 50% !important;
 }
 .uxTitle {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .uxContent {
-    text-align: center;
-    font-size: 18px;
-    line-height: 32px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
 }
-
 
 /* ===================== End RAD Hiking Page Styling ======================= */
 
 /* ==================== Trace & Find Page Styling =========================== */
 .traceContainerImg {
-    display: flex;
-    justify-content: center;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 .traceHomeImg {
-    background-image: url(imgs/trace.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
-    width: 400px;
-    margin-bottom: 40px;
+  background-image: url(imgs/trace.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 400px;
+  margin-bottom: 40px;
 }
 .traceContentInfo {
-    font-size: 18px;
-    line-height: 32px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 }
 .traceCss {
-    margin-top: 50px;
-    margin-right: 40px;
+  margin-top: 50px;
+  margin-right: 40px;
 }
 .traceHomepage {
-    background-image: url(imgs/traceHomepage.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 330px;
-    width: 350px;
-    margin-top: 70px;
+  background-image: url(imgs/traceHomepage.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 330px;
+  width: 350px;
+  margin-top: 70px;
 }
 .tracePhone {
-    background-image: url(imgs/tracePhone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 419px;
-    width: 224px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  background-image: url(imgs/tracePhone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 419px;
+  width: 224px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-
-
 
 /* =============================================================================== */
 
@@ -919,189 +918,186 @@ h3 {
 
 /* -==================================================================================== */
 @media screen and (min-width: 600px) {
-    .menuIcon {
-        display: none;
-    }
-    .menuWord {
-        display: block;
-        margin-right: 20px;
-        cursor: pointer;
-    }
-    .open .menuWord {
-        margin-right: 50px;
-    }
-    .imgMain {
-        height: 600px;
-        width: 600px;
-    }
-    .inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .skillsList {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .lineBreak {
-        display: none;
-    }
+  .menuIcon {
+    display: none;
+  }
+  .menuWord {
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .open .menuWord {
+    margin-right: 50px;
+  }
+  .imgMain {
+    height: 600px;
+    width: 600px;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .lineBreak {
+    display: none;
+  }
 }
 @media screen and (min-width: 900px) {
-    .img-container {
-        margin-top: 100px;
-    }
-    .aboutMePic {
-        height: 400px;
-        width: 400px;
-        margin-right: 500px;
-    }
-    .aboutContentTitle {
-        font-size: 48px;
-        line-height: 64px;
-        margin-top: -400px;
-        margin-left: 950px;
-        width: 600px;
-    }
-    .aboutLine {
-        margin-left: 50% !important;
-        margin-bottom: 200px;
-    }
-    .aboutContent {
-        font-size: 20px;
-        line-height: 40px;
-    }
-    .radHiking {
-        margin-bottom: 100px;
-    }
-    .imgMain {
-        height: 800px;
-        width: 800px;
-    }
-    .radImg {
-        position: absolute;
-        height: 500px;
-        width: 760px;
-        background-size: contain;
-        /* margin-bottom: 100px; */
-    }
-    .radImgContainer, .traceImgContainer {
-        height: 500px;
-        width: 760px;
-    }
-    .titleSection {
-        margin-top: -400px;
-        margin-right: 400px;
-    }
-    .titleSection p {
-        width: 600px;
-        margin-right: 600px;
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .lineRight {
-        float: right;
-        margin-right: 95% !important;
-    }
-    .traceFind {
-        margin-top: 100px;
-        margin-bottom: 200px;
-    }
-    .traceSection {
-        margin-top: -400px;
-        margin-left: 800px;
-    }
-    .traceSection p {
-        font-size: 20px;
-        line-height: 36px;
-        width: 600px;
-    }
-    .traceImg {
-        height: 500px;
-        width: 760px;
-    }
-    .skillsList {
-        grid-template-columns: 1fr 1fr 1fr;
-        font-size: 20px;
-        line-height: 36px;
-    }
-    /* =============== RAD PAGE STYLING @ MEDIA 900 =============== */
-    .radContent {
-        font-size: 48px;
-        line-height: 64px;
-    }
-    .radContentInfo {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .homepageContent {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .homepageImg {
-        height: 660px;
-        width: 700px;
-        border-radius: 5px;
-    }
-    .text {
-        font-size: 20px;
-        margin-top: 100px;
-        justify-content: center;
-    }
-    .roleContent {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .radHomeImg {
-        height: 600px;
-        width: 800px;
-    }
-    .lineHome {
-        width: 10%;
-    }
-    .mobileContent {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .mobileHome {
-        height: 399px;
-        width: 155px;
-    }
-    .mobileImg {
-        height: 467px;
-        width: 233px;
-    }
-    .aboutImg {
-        height: 399px;
-        width: 155px;
-    }
-    .uxLine {
-        width: 10%;
-        margin-left: 45% !important;
-    }
-    .uxContent {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    /* Trace & Find Page */
-    .traceTools {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .traceHomeImg {
-        height: 600px;
-        width: 800px;
-    }
-    .traceContentInfo {
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .traceHomepage {
-        height: 660px;
-        width: 700px;
-    }
-    .tracePhone {
-        height: 523px;
-        width: 280px;
-    }
+  .img-container {
+    margin-top: 100px;
+  }
+  .aboutMePic {
+    height: 400px;
+    width: 400px;
+    margin-right: 500px;
+  }
+  .aboutContentTitle {
+    font-size: 48px;
+    line-height: 64px;
+    margin-top: -400px;
+    margin-left: 950px;
+    width: 600px;
+  }
+  .aboutLine {
+    margin-left: 50% !important;
+    margin-bottom: 200px;
+  }
+  .aboutContent {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .radHiking {
+    margin-bottom: 100px;
+  }
+  .imgMain {
+    height: 800px;
+    width: 800px;
+  }
+  .radImg {
+    position: absolute;
+    height: 500px;
+    width: 760px;
+    background-size: contain;
+  }
+  .radImgContainer,
+  .traceImgContainer {
+    height: 500px;
+    width: 760px;
+  }
+  .titleSection {
+    margin-top: -400px;
+    margin-right: 400px;
+  }
+  .titleSection p {
+    width: 600px;
+    margin-right: 600px;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .lineRight {
+    float: right;
+    margin-right: 95% !important;
+  }
+  .traceFind {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .traceSection {
+    margin-top: -400px;
+    margin-left: 800px;
+  }
+  .traceSection p {
+    font-size: 20px;
+    line-height: 36px;
+    width: 600px;
+  }
+  .traceImg {
+    height: 500px;
+    width: 760px;
+  }
+  .skillsList {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  /* =============== RAD PAGE STYLING @ MEDIA 900 =============== */
+  .radContent {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  .radContentInfo {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .homepageContent {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .homepageImg {
+    height: 660px;
+    width: 700px;
+    border-radius: 5px;
+  }
+  .text {
+    font-size: 20px;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .roleContent {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .radHomeImg {
+    height: 600px;
+    width: 800px;
+  }
+  .lineHome {
+    width: 10%;
+  }
+  .mobileContent {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .mobileHome {
+    height: 399px;
+    width: 155px;
+  }
+  .mobileImg {
+    height: 467px;
+    width: 233px;
+  }
+  .aboutImg {
+    height: 399px;
+    width: 155px;
+  }
+  .uxLine {
+    width: 10%;
+    margin-left: 45% !important;
+  }
+  .uxContent {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  /* Trace & Find Page */
+  .traceHomeImg {
+    height: 600px;
+    width: 800px;
+  }
+  .traceContentInfo {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .traceHomepage {
+    height: 660px;
+    width: 700px;
+  }
+  .tracePhone {
+    height: 523px;
+    width: 280px;
+  }
 }
