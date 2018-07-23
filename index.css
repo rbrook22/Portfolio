@@ -17,8 +17,6 @@ body {
   width: 100%;
   font-size: 20px;
   position: fixed;
-  background-color: none;
-  transition: background-color 0.5s ease-in-out;
 }
 .menuIconContainer {
   display: flex;
@@ -97,13 +95,12 @@ a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   color: blue;
   cursor: pointer;
 }
-.name:hover {
-  color: black;
-}
+
 /* ======================= End NavBar Styling ========================== */
 .about {
   transition: all 2s ease 1s;
@@ -283,6 +280,7 @@ a:hover {
   width: 100px;
   height: 50px;
   cursor: pointer;
+  text-align: center;
 }
 .overlayButton:hover {
   background-color: rgba(183, 213, 245, 0.8);
@@ -956,6 +954,9 @@ h3 {
   }
 }
 @media screen and (min-width: 900px) {
+  .open .navBar {
+    border: none;
+  }
   .img-container {
     margin-top: 100px;
   }
