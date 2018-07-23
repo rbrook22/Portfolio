@@ -334,11 +334,19 @@ a:hover {
   margin-right: 20px;
   margin-top: 20px;
 }
+.toolsUsed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .toolsContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   margin-bottom: 50px;
+  max-width: 600px;
+  width: 100%;
 }
 /* =============== End Tools Used Styling on Rad HTML Page ===================== */
 
