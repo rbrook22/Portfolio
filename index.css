@@ -728,16 +728,28 @@ h3 {
 .scopeInfo {
   margin-bottom: 50px;
 }
-.vidWalkthrough {
+.walkthroughContainer {
+  box-sizing: border-box;
+  display: block;
+}
+.vidWalkthrough iframe {
   max-width: 600px;
-  width: 400px;
+  display: inline-block;
+  width: 350px;
+  height: 500px;
   margin-left: 20px;
   margin-right: 20px;
 }
 .codepen {
+  display: inline-block;
+  text-align: center;
   max-width: 600px;
+  width: 350px;
   margin-left: 20px;
   margin-right: 20px;
+}
+.cp_embed_wrapper iframe {
+  height: 500px;
 }
 
 /* ======================== End RAD Home Styling ============================ */
@@ -931,10 +943,6 @@ h3 {
   }
   .lineBreak {
     display: none;
-  }
-  .walkthroughContainer {
-    display: flex;
-    justify-content: space-between;
   }
 }
 @media screen and (min-width: 900px) {
