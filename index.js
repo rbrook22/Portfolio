@@ -1,11 +1,14 @@
-$(document).ready(function() {
-    $(".menuIcon, .menuWord").on("click", function(){
+$(document).ready(function () {
+    $(".menuIcon, .menuWord").on("click", function () {
         $("body").toggleClass("open");
     });
+    $(".menu-items-list a").on("click", function () {
+        $("body").toggleClass("open");
+    })
 });
 
 // NavBar Scroll Change Color
-$(document).scroll(function(){
+$(document).scroll(function () {
     var height = $(".navOptions").height();
     if ($(this).scrollTop() > height) {
         $(".navOptions").css("background-color", "rgba(183, 213, 245, 0.8)");
@@ -15,6 +18,6 @@ $(document).scroll(function(){
 });
 
 // Homepage Logo Ease In
-$(function() {
+$(function () {
     $('.imgMain').removeClass('fade-out');
 });
